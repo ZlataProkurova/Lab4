@@ -1,9 +1,7 @@
 import java.util.Scanner;
 public class Lab4  { public static void main(String args[]) {
     Scanner in = new Scanner(System.in);
-
     int array[], arraySize = 0;
-
     System.out.print("Enter the dimension of the array: ");
     while (!in.hasNextInt()) {
         System.out.println("Error! The dimension of the array must be a number.");
@@ -11,7 +9,6 @@ public class Lab4  { public static void main(String args[]) {
         in.next();
     }
     arraySize = in.nextInt();
-
     array = new int[arraySize];
     int count_x = 0;
     for (int i = 0; i < array.length; i++) {
